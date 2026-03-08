@@ -56,7 +56,7 @@ describe('Automação de Testes - Desafio Faculdade Exemplo', () => {
         });
     });
 
-    it.only('Item 09 - Validar escala inadequada dos ícones no rodapé', () => {
+    it('Item 08 - Validar escala inadequada dos ícones no rodapé', () => {
         cy.get(faculdadePage.elements.iconesRodape).first().then($icon => {
             expect($icon.width()).to.be.at.least(24, 'Ícone muito pequeno para mobile');
         });
